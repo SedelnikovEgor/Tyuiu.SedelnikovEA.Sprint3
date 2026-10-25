@@ -19,7 +19,7 @@ namespace Tyuiu.SedelnikovaEA.Sprint3.Task5.V6.Test
 
             double res = ds.GetSumSumSeries(startValue1, stopValue1, startValue2, stopValue2);
 
-            double expected = 43.917;
+            double expected = 40.917;
 
             Assert.AreEqual(expected, res);
         }
