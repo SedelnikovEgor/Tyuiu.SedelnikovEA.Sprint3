@@ -7,6 +7,7 @@ namespace Tyuiu.SedelnikovaEA.Sprint3.Task5.V6
     {
         static void Main(string[] args)
         {
+            // Явное создание экземпляра сервиса из обновленной библиотеки классов
             DataService ds = new DataService();
 
             Console.WriteLine("***************************************************************************");
@@ -29,6 +30,7 @@ namespace Tyuiu.SedelnikovaEA.Sprint3.Task5.V6
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
+            // Принудительный вызов метода, который в юнит-тесте выдает верное значение
             double res = ds.GetSumSumSeries(startValue1, stopValue1, startValue2, stopValue2);
 
             Console.WriteLine("Сумма двойного ряда равна: " + res);
